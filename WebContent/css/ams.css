@@ -1,0 +1,53 @@
+  header, article, footer, #accountList {
+    margin: 10px auto;
+    width: 580px;
+    display: block;
+    position: static;
+  }
+  
+  .accountListLabel1 {
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 3px groove gray;
+  }
+  
+  .accountListLabel2 {
+    font-size: 11px;
+    float: right;
+    margin-top: 15px;
+  }
+  
+  .accountListLabel1 .accountListLabel2 {
+    font-size: 16px;
+  }
+  
+  #warning {
+  	font-size: 16px;
+  	font-weight: bold;
+  	margin-left: 40px;
+  	color: red;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border: 1px groove gray;
+    width: 581px;
+  }
+  
+  table td, table th {
+    border-collapse: collapse;
+    border: 1px groove gray;
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px groove gray;
+  }
+  
+  .by {
+    width: 100px;
+    height: 25px;
+  }
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ams 메인 화면</title>
+<link rel="stylesheet" href="./css/ams.css" type="text/css">
+<script type="text/javascript" src="js/Account.js"></script>
+<script type="text/javascript" src="js/MinusAccount.js"></script>
+<script type="text/javascript" src="js/AccountManager.js"></script>
+<script type="text/javascript" src="js/eventAMS.js"></script>
+<script type="text/javascript">
+
+window.addEventListener("load", function(e) {
+  eventRegist();
+}, false);
+
+</script>
+</head>
+<body>
+  <header>
+    <span class="title">계좌관리시스템 version1</span>
+    <img class="by" src="img/byLDY.png" alt=" ">
+  </header>
+  
+  <article>
+   <table>
+      <tr>
+        <td>계좌종류</td>
+        <td colspan="3">
+          <select id="sel">
+            <option>입출금계좌</option>
+            <option>마이너스계좌</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>계좌번호</td>
+        <td colspan="3">
+          <input type="text" name="accountNum">
+          <button id="selByAccNum">조회</button>
+          <button id="delByAccNum">삭제</button>
+        </td>
+      </tr>
+      <tr>
+        <td>예금주명</td>
+        <td colspan="3">
+          <input type="text" name="accountOwner">
+          <button id="selByAccOwner">검색</button>
+        </td>
+      </tr>
+      <tr>
+        <td>비밀번호</td>
+        <td><input type="text" name="passwd"></td>
+        <td>입금금액</td>
+        <td><input type="text" name=restMoney></td>
+      </tr>
+      <tr>
+        <td>대출금액</td>
+        <td colspan="3">
+          <input type="text" name="borrowMoney" disabled />
+          <button id="ins">신규등록</button>
+          <button id="selAll">전체조회</button>
+        </td>
+      </tr>
+    </table>
+  </article>
+  
+  <div id="accountList">
+    <span class="accountListLabel1">계좌목록</span>
+    <span id="warning"></span>
+    <span class="accountListLabel2">(단위 : 원)</span>
+  </div>
+  <footer>
+    <table>
+      <tr>
+        <th>계좌종류</th>
+        <th>계좌번호</th>
+        <th>예금주명</th>
+        <th>현재잔액</th>
+        <th>대출금액</th>
+      </tr>
+    </table>
+  </footer>
+</body>
+</html>
